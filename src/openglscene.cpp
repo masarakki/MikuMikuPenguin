@@ -111,7 +111,7 @@ void OpenGLScene::loadTextures()
 			unsigned char* image;
 			string loc=pmxInfo->texturePaths[i];
 			
-			ifstream test(loc);
+			ifstream test(loc.c_str());
 			if(!test.is_open())
 			{
 				cerr<<"Texture file could not be found: "<<loc<<endl;
@@ -152,7 +152,7 @@ void OpenGLScene::loadTextures()
 			unsigned char* image;
 			string loc=pmxInfo->texturePaths[i];
 			
-			ifstream test(loc);
+			ifstream test(loc.c_str());
 			if(!test.is_open())
 			{
 				cerr<<"Texture file could not be found: "<<loc<<endl;
@@ -192,7 +192,7 @@ void OpenGLScene::loadTextures()
 			unsigned char* image;
 			string loc=pmxInfo->texturePaths[i];
 			
-			ifstream test(loc);
+			ifstream test(loc.c_str());
 			if(!test.is_open())
 			{
 				cerr<<"Texture file could not be found: "<<loc<<endl;
