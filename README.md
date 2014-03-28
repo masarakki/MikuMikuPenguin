@@ -34,9 +34,11 @@ https://github.com/sn0w75/MikuMikuPenguin/
 
 ## 依存ライブラリ
 
-LibMikuMikuPenguinにはlibglfw, libglew,libglm,libBulletが必要です。
+LibMikuMikuPenguinには `libglfw`, `libglew`, `libglm`, `libBullet`, `Qt 5.2` が必要です。
 
-PMXViewerにはlibmmp、libSOILが必要です。VMDと一緒に音楽を再生したい場合は、SDL2、SDL2_mixerも必要です。（なくてもコンパイル出来ます）
+PMXViewerにはlibmmp、`libSOIL` が必要です。VMDと一緒に音楽を再生したい場合は、`SDL2`、 `SDL2_mixer` も必要です。（なくてもコンパイル出来ます）
+
+[ubuntuの例](https://github.com/sn0w75/MikuMikuPenguin/blob/master/install_ubuntu.md)
 
 ### ライブラリの詳細（2014年1月20日）：
 
@@ -45,7 +47,7 @@ PMXViewerにはlibmmp、libSOILが必要です。VMDと一緒に音楽を再生�
 
 **注意！！！！！**
 
-GLM 0.9.3（<=0.9.2もそうかもしれない）ではバグがあります： 
+GLM 0.9.3（<=0.9.2もそうかもしれない）ではバグがあります：
 https://github.com/g-truc/glm/issues/15
 
 このバグを回避する為には、-fpermissiveを使う必要があります。例えば：
@@ -62,8 +64,7 @@ https://github.com/g-truc/glm/issues/15
 
 コンパイルするにはターミナルで：
 
-    $ autoreconf -i
-    $ ./configure
+    $ cmake .
     $ make
 
 をすれば大丈夫です。
