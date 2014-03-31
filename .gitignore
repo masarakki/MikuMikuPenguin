@@ -43,7 +43,9 @@ CMakeFiles
 Makefile
 cmake_install.cmake
 install_manifest.txt
-
+*automoc*
+moc_*
+*.moc
 
 # genrated codes
 
